@@ -1,0 +1,23 @@
+ body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: lightgray;
+      border-radius: 10px;
+    }
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      
+    }
+    button {
+      background-color: rgb(81, 73, 80);
+      color: aliceblue;
+      cursor: pointer;
+    }

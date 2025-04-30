@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: lightgray;
+      font-family: Arial, sans-serif;
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: lightgray;
+      border-radius: 10px;
+    }
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      
+    }
+    button {
+      background-color: rgb(81, 73, 80);
+      color: aliceblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="" action="" name="form1" id="my-form" onsubmit="return add()">
+    <h1>REGISTRATION FORM</h1>
+    
+    Name:
+    <input type="text" name="name" id="name" placeholder="Enter your full name">
+    
+    Address:
+    <input type="text" name="address" id="address" placeholder="Enter your address">
+    
+    E-mail Address:
+    <input type="email" name="email" id="email" placeholder="Enter your email">
+    
+    Password:
+    <input type="password" name="password" id="password" placeholder="Enter your password">
+
+    Confirm Password:
+    <input type="password" id="confirmPassword" placeholder="Confirm your password">
+
+    Select your course:
+    <input type="text" name="course" id="course" placeholder="Select course">
+    
+    College name:
+    <input type="text" name="college" id="college" placeholder="Enter college name">
+    
+    <label><input type="checkbox" name="checkbox" id="checkbox"> I agree to the above information</label>
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function add() {
+      const form = document.form1;
+      const password = document.getElementById("password");
+      const confirmPassword = document.getElementById("confirmPassword");
+
+      if (form.name.value == "") {
+        alert("Please fill the name");
+        form.name.focus();
+        return false;
+      }
+      if (form.address.value == "") {
+        alert("Please fill the address");
+        form.address.focus();
+        return false;
+      }
+      if (form.email.value == "") {
+        alert("Please fill the email");
+        form.email.focus();
+        return false;
+      }
+      if (form.password.value.length < 6) {
+        alert("Password must be at least 6 characters");
+        form.password.focus();
+        return false;
+      }
+      if (password.value !== confirmPassword.value) {
+        alert("Passwords do not match!");
+        password.focus();
+        return false;
+      }
+      if (form.course.value == "") {
+        alert("Please choose the course");
+        form.course.focus();
+        return false;
+      }
+      if (form.college.value == "") {
+        alert("Please fill the college name");
+        form.college.focus();
+        return false;
+      }
+      if (!form.checkbox.checked) {
+        alert("Please agree to the above information");
+        form.checkbox.focus();
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true; // allow form submission
+    }
+  </script>
+</body>
+</html>
