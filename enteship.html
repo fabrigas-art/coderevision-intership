@@ -3,339 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Street Light Monitoring</title>
+    <title>Document</title>
     <style>
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
+        body{
             background-color: lightgray;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
         }
-        
-        header {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            justify-content: space-between;
-            padding: 15px;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-        
-        .div1 {
-            display: none;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .div1.active {
-            display: flex;
-        }
-        
-        .mobile-menu-button {
-            display: block;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        .but {
-            background-color: rgb(45, 45, 241);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            height: 30px;
-            padding: 0 15px;
-            cursor: pointer;
-        }
-        
-        #sm {
-            color: rgb(45, 45, 241);
-        }
-        
-        .div2 {
-            background-color: rgb(45, 45, 241);
-            padding: 40px 20px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            display: flex;
-        }
-        
-        .div2 h2 {
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-        
-        .div2 p {
-            margin-bottom: 20px;
-            max-width: 600px;
-        }
-        
-        .but2 {
-            font-size: medium;
-            color: blue;
-            background-color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        
-        .fe {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-            padding: 20px;
-            gap: 20px;
-        }
-        
-        .en, .re, .pro {
-            background-color: white;
-            border-radius: 4px;
-            width: 100%;
-            padding: 20px;
-            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        section {
-            padding: 40px 20px;
-        }
-        
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        footer {
-            background-color: #222;
-            color: aliceblue;
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        .footer-section {
-            width: 100%;
-        }
-        
-        .footer-section h3 {
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-        
-        .footer-section a {
-            display: block;
-            text-decoration: none;
-            color: aliceblue;
-            margin-bottom: 10px;
-        }
-        
-        .footer-section p {
-            margin-bottom: 10px;
-        }
-        
-        /* Tablet styles */
-        @media (min-width: 768px) {
-            header {
-                flex-direction: row;
-                padding: 20px 30px;
-            }
-            
-            .div1 {
-                display: flex;
-                flex-direction: row;
-                margin-top: 0;
-                align-items: center;
-            }
-            
-            .mobile-menu-button {
-                display: none;
-            }
-            
-            .en, .re, .pro {
-                width: calc(50% - 20px);
-            }
-            
-            footer {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            
-            .footer-section {
-                width: 48%;
-            }
-        }
-        
-        /* Desktop styles */
-        @media (min-width: 1024px) {
-            header {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .div2 {
-                padding: 60px 20px;
-            }
-            
-            .div2 h2 {
-                font-size: 2.5rem;
-            }
-            
-            .en, .re, .pro {
-                width: calc(33.33% - 20px);
-            }
-            
-            section {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            footer {
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-            
-            .footer-section {
-                width: 30%;
-            }
-            
-        }
+    header{
+        height: 34px;
+        width: 899px;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+    .div1{
+        display: flex;
+        gap: 20px;
+    }
+    .but{
+background-color: rgb(45, 45, 241);
+color: white;
+border: 1px;
+border-radius: 50px;
+height: 30px;
+
+    }
+    #sm{
+        color:  rgb(45, 45, 241);
+    }
+   .div2{
+background-color:rgb(45, 45, 241) ;
+height: 50vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+display: flex;
+   }
+   .but2{
+    font-size: medium;
+    color: blue;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+   }
+   .fe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+    gap: 20px;
+   }
+   .en{
+    background-color: white;
+    border: 2px ;
+    border-radius: 4px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 5px black;
+   }
+   .re{
+    background-color: white;
+    border: 2px ;
+    border-radius: 4px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 5px black;
+   }
+   .pro{
+    background-color: white;
+    border: 2px ;
+    border-radius: 4px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 4px 5px black;
+   }
+   .fot1{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(32, 30, 30);
+    color: aliceblue;
+    flex-direction: column;
+    width: 899px;
+    padding-left: 15px;
+   }
+   a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 15px;
+    
+   }
+   .fot2{
+    display: block;
+   }
+   footer{
+    background-color: #222;
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+   }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h2><label for="SMART" id="sm">SMART</label> LIGHT</h2>
-            <button class="mobile-menu-button">☰</button>
-            <div class="div1">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How it works</a>
-                <a href="#testimonials">Testimonials</a>
-                <button class="but">Get started</button>
-            </div>
-        </div>
+        <h2><label for="SMART" id="sm" > SMART</label> LIGHT</h2><div class="div1"> <h5>features</h5><h5>how it works</h5><h5>Testimomials</h5> <button class="but"> Get started</button></div>
     </header>
-    
     <div class="div2">
-        <h2>Smart Street Light Monitoring System</h2>
-        <p>
-            Optimize your street lighting with IoT technology for energy efficiency and maintenance
-        </p>
-        <button class="but2">Get started</button>
+        <h2> Smart Street Light Monitoring System</h2>
+        <P>
+            optimize your street lighting with IOT technology for energy efficency maintenance
+        </P>
+        <button class="but2"> <b>Get started</b></button>
+    </div>
+    <center>
+    <h2> features</h2>
+    </center>
+    <div class="fe">
+
+<div class="en">
+    <h3>energy efficency</h3>
+    <p> reduce  energy consumption  by   based on real time condition </p>
+</div>
+<div class="re">
+    <h3>Real-time monitoring</h3>
+    <p>Monitor the opertions status of individual lights effectively</p>
+</div>
+<div class="pro"> 
+    <h3>Proactive Maintenance</h3>
+<P> Receive alerts for maintenance needs to ensure optional perfomance</P>
+</div>
+
+    </div>
+    <center>
+        <h2> how it works </h2>
+        </center>
+        <div class="fe">
+    
+    <div class="en">
+        <h3>step 1: data Collection</h3>
+        <p> reduce  energy consumption  by  based on real time condition </p>
+    </div>
+    <div class="re">
+        <h3>step 2: Data Transmission</h3>
+        <p>Monitor the opertions status of individual lights effectively</p>
+    </div>
+    <div class="pro"> 
+        <h3>step 3: Dynamic Adjustment</h3>
+    <P> Receive alerts for maintenance needs to ensure optional perfomance</P>
     </div>
     
-    <section id="features">
-        <h2>Features</h2>
-        <div class="fe">
-            <div class="en">
-                <h3>Energy Efficiency</h3>
-                <p>Reduce energy consumption based on real-time conditions</p>
-            </div>
-            <div class="re">
-                <h3>Real-time Monitoring</h3>
-                <p>Monitor the operational status of individual lights effectively</p>
-            </div>
-            <div class="pro">
-                <h3>Proactive Maintenance</h3>
-                <p>Receive alerts for maintenance needs to ensure optimal performance</p>
-            </div>
         </div>
-    </section>
-    
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <div class="fe">
-            <div class="en">
-                <h3>Step 1: Data Collection</h3>
-                <p>Sensors collect real-time data about lighting conditions and environment</p>
-            </div>
-            <div class="re">
-                <h3>Step 2: Data Transmission</h3>
-                <p>Data is transmitted to the central monitoring system via IoT network</p>
-            </div>
-            <div class="pro">
-                <h3>Step 3: Dynamic Adjustment</h3>
-                <p>Lights automatically adjust brightness based on collected data</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="fe">
-            <div class="en">
-                <p><i>"This system reduced our energy costs by 40% while improving public safety."</i></p>
-                <br><b>- John Doe, City Manager</b>
-            </div>
-            <div class="re">
-                <p><i>"The real-time monitoring has transformed our maintenance operations."</i></p>
-                <br><b>- Jane Smith, Maintenance Director</b>
-            </div>
-            <div class="pro">
-                <p><i>"We receive alerts before issues become visible to the public."</i></p>
-                <br><b>- Alex Johnson, Operations Lead</b>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-section links">
-            <h3>Links</h3>
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How it works</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#">Get started</a>
-            <a href="#">Dashboard</a>
-        </div>
-        <div class="footer-section contact">
-            <h3>Contact</h3>
-            <p>Kigali, Kicukiro, Gahanga KK15 Rd</p>
-            <a href="tel:+250788525478">0788852378 / 0788825490</a>
-            <a href="mailto:smartstreetlighting@gmail.com">smartstreetlighting@gmail.com</a>
-        </div>
-        <div class="footer-section social">
-            <h3>Follow Us</h3>
-            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i> X</a>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.div1').classList.toggle('active');
-        });
+        <center>
+            <h2> What Our Say Users  Say  </h2>
+            </center>
+            <div class="fe">
         
-        // Close menu when clicking on a link (for mobile)
-        document.querySelectorAll('.div1 a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.querySelector('.div1').classList.remove('active');
-            });
-        });
-    </script>
+        <div class="en">
+            
+            <p> <i>reduce  energy consumption  by  based on real time condition</i> </p>
+            <br><b>- John Doe</b>
+
+        </div>
+        <div class="re">
+            
+            <p><i>Monitor the opertions status of individual lights effectively</i></p>
+            <br><b>- Jane Smith</b>
+        </div>
+        <div class="pro"> 
+            
+        <P> <i>Receive alerts for maintenance needs to ensure optional perfomance</i></P>
+        <br><b>- Alex Johnson</b>
+        </div>
+        
+            </div>
+            <footer>
+                
+                <div class="links">
+                    <p><strong>Links</strong></p>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#">Get started</a>
+                    <a href="#">Dashboard</a>
+                  </div>
+                  <div class="contact">
+                    <p><strong>Contact</strong></p>
+                    <p>kigali.kicukiro.gahanga KK15 rd</p>
+                    <a href="tel:+250788525478">0788852378 / 0788825490</a>
+                    <a href="mailto:smartstreetlighting@gmail.com">smartstreetlighting@gmail.com</a>
+                  </div>
+                  <div class="social">
+                    <p><strong>Follow us</strong></p>
+                    <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> linkedIn</a>
+                    <a href="#">X</a>
+                  </div>
+                </footer>
+            </footer>
 </body>
 </html>
